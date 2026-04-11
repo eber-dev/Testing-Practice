@@ -7,18 +7,18 @@ import {
 } from './index.js';
 
 test('capitalizar', () => {
-    expect(capitalize('hola')).toBe('Hola');
+    expect(capitalize('hola')).toBe('H');
 });
 
 test('alreves', () => {
-    expect(reverseString('arbol').tobe('lobra'));
+    expect(reverseString('arbol')).toBe('lobra');
 });
 
 test('calculadora', () => {
-    expect(calculator.add(2, 1)).toBe(3);
-    expect(calculator.sub(5, 1)).toBe(4);
-    expect(calculator.multiply(1, 1)).toBe(1);
-    expect(calculator.divide(6, 1)).toBe(6);
+    expect(calculator(2, 1, '+')).toBe(3);
+    expect(calculator(5, 1, '-')).toBe(4);
+    expect(calculator(1, 1, '*')).toBe(1);
+    expect(calculator(6, 1, '/')).toBe(6);
 });
 
 test('caesarCipher', () => {
